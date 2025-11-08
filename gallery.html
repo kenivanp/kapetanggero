@@ -1,8 +1,9 @@
 <!-- 
 ITS121-1L Web Systems and Technologies 1 Laboratory
-Exercise #4 - Kape Tanggero Coffee Shop Website
+Exercise #4 - Kape Tanggero Coffee Shop Website 
 Author: Ken Ivan Panganiban
-Date: October 31, 2025
+Co-Author: Lundag, Juliana Marie | Tan, Furyk Cleavin | Solis, Jaymar | Rodriguez, John Cederic 
+Date: November 7, 2025
 -->
 
 <!DOCTYPE html>
@@ -12,6 +13,9 @@ Date: October 31, 2025
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kape Tanggero - Gallery</title>
     <link rel="icon" type="image/x-icon" href="img/KapeTanggeroLogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -102,6 +106,12 @@ Date: October 31, 2025
 			<a href="#img10">
 				<img class="img-fluid" src="img/gallery/KT0_10.jpg" alt="Coffee Shot 10">
 			</a>
+			<a href="#img11">
+				<img class="img-fluid" src="img/gallery/KT0_11.jpg" alt="Coffee Shot 11">
+			</a>
+			<a href="#img12">
+				<img class="img-fluid" src="img/gallery/KT0_12.jpg" alt="Coffee Shot 12">
+			</a>                   
 		</div>
 
         <!-- Lightbox overlays -->
@@ -145,6 +155,14 @@ Date: October 31, 2025
             <a href="#_" class="lightbox-close">&times;</a>
             <img src="img/gallery/KT0_10.jpg" alt="Coffee Shot 10">
         </div>
+        <div id="img11" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="img/gallery/KT0_11.jpg" alt="Coffee Shot 11">
+        </div>
+        <div id="img12" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="img/gallery/KT0_12.jpg" alt="Coffee Shot 11">
+        </div>
 
         <h4>Customer Favorites</h4>
         <ul class="styled-list">
@@ -165,25 +183,78 @@ Date: October 31, 2025
     </a>
 
     <!-- =================== FOOTER =================== -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Kape Tanggero by <u>Ken Ivan Panganiban</u>. This website is for educational use only.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <img src="img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero Logo">
+                        <span>Kape Tanggero</span>
+                    </a>
+                    <p class="footer-tagline">A moment of coffee, connection, and calm.</p>
+                </div>
 
-            <div class="social-links">
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/KAPE.Tanggero/" target="_blank" aria-label="Facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-.8 0-1 .4-1 1v1h2.6l-.4 3H14v7A10 10 0 0 0 22 12"/></svg>
-                </a>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Visit Us</h4>
+                        <address>
+                            9 Shorthorn Street<br>
+                            Project 8, Quezon City<br>
+                            Philippines
+                        </address>
+                    </div>
 
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/kape.tanggero/" target="_blank" aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/></svg>
-                </a>
+                    <div class="footer-column">
+                        <h4>Hours</h4>
+                        <ul>
+                            <li>Mon – Fri: 1:00 PM – 1:00 AM</li>
+                            <li>Sat – Sun: 3:00 PM – 3:00 AM</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Let's Connect</h4>
+                        <ul>
+                            <li><a href="tel:+639154341031">+63 915 434 1031</a></li>
+                            <li><a href="mailto:kapetanggero.ph@gmail.com">kapetanggero.ph@gmail.com</a></li>
+                            <li><a href="https://maps.app.goo.gl/D2cRMfpiP8ArP23t7" target="_blank">Get Directions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/KAPE.Tanggero/" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-.8 0-1 .4-1 1v1h2.6l-.4 3H14v7A10 10 0 0 0 22 12"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/kape.tanggero/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/></svg>
+                    </a>
+                </div>
+                <p class="footer-note">&copy; 2025 Kape Tanggero Coffee Co. Brewed in Quezon City.</p>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTop = document.querySelector('.back-to-top');
+            if (!backToTop) return;
+
+            const toggleBackToTop = () => {
+                if (window.scrollY > 240) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            };
+
+            toggleBackToTop();
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        });
+    </script>
 </body>
 </html>
